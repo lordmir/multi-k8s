@@ -1,0 +1,37 @@
+{
+    "AWSEBDockerrrunVersion": 2,
+    "containerDefinitions":
+    [
+        {
+            "name": "client",
+            "image": "lordmir/multi-client",
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "lordmir/multi-server",
+            "hostname": "api",
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "lordmir/multi-worker",
+            "hostname": "worker",
+            "essential": false
+        },
+        {
+            "name": "nginx",
+            "image": "lordmir/multi-nginx",
+            "essential": true,
+            "portMappings":
+            [
+                {
+                    "hostPort": 80,
+                    "containerPort": 80
+                }
+            ],
+            "links": ["client", "server"]
+        }
+    ]
+}
