@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header style="background: dark blue">
+        <header style={{background: "#000030;"}}>
           <h1>Fibbonaci Calculator</h1>
           <img src={logo} className="App-logo" alt="logo" />
           <Link to="/">Home</Link>
