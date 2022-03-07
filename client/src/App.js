@@ -9,10 +9,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+        <header style="background: dark blue">
+          <h1>Fibbonaci Calculator</h1>
           <img src={logo} className="App-logo" alt="logo" />
           <Link to="/">Home</Link>
-          <Link to="/otherpage">Other Page</Link>
+          <Link to="/hase">Hase?</Link>
         </header>
         <div>
           <Route exact path="/" component={Fib} />
