@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <header style={{background: "#000030;"}}>
-          <h1>Fibbonaci Calculator</h1>
+          <h1>Fibbonaci Calculator Passion</h1>
           <img src={logo} className="App-logo" alt="logo" />
           <Link to="/">Home</Link>
           <Link to="/hase">Hase?</Link>
