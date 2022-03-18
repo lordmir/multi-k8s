@@ -11,10 +11,3 @@ spec:
   dnsNames:
     - haseweb.co.uk
     - www.haseweb.co.uk
-  acme:
-    config:
-      - http01:
-          ingressClass: nginx
-        domains:
-          - haseweb.co.uk
-          - www.haseweb.co.uk
